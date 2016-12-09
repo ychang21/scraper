@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>News Scraper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: #000080;
+        color: #ffffff;
+    }
+ 
+    #articles {
+        height: 700px;
+        overflow: auto;
+    }
+
+    #comments {
+        height: 36px;
+        font-size: 24px;
+    }
+
+    #notes {
+        height: 36px;
+        font-size: 24px;
+    }
+    
+    textarea {
+        height: 200px;
+        font-size: 18px;
+        background-color: #000000;
+        color: #ffffff;
+    }
+    button {
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-center">News Scraper</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <button type="button" class="btn btn-danger btn-lg scrape">Scrape Up News!</button>
+            <!-- <button type="button" class="btn btn-primary btn-lg scrape">Now... the Magic!</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="text-center">Check out the latest news from your friendly news Scraper</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="row">
+                <h3 class="text-center">Write a Comment!</h3>
+            </div>
+            <div class="row">
+                <div class="text-center" id="comments"></div>
+            <!-- </div>
+            <div class="row">
+                <div class="text-center" id="save"></div> -->
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="row">
+                <h3 class="text-center">Articles</h3>
+            </div>
+            <div class="row">
+                <div class="text-center" id="articles"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="row">
+                <h3 class="text-center">Comments</h3>
+            </div>
+            <div class="row">
+                <div class="text-center" id="notes"></div>
+            <!-- </div>
+            <div class="row">
+                <div class="text-center" id="delete"></div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
